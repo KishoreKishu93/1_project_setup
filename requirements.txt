@@ -3,5 +3,8 @@ scikit-learn
 numpy
 seaborn
 matplotlib
+DateTime
+dataclasses
+pathlib
 
 -e .
