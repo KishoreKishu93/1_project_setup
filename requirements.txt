@@ -6,5 +6,7 @@ matplotlib
 DateTime
 dataclasses
 pathlib
+wheel
+
 
 -e .
