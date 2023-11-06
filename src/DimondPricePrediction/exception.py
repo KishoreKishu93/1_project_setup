@@ -9,7 +9,7 @@ class customexception(Exception):
        self.file_name = exe_tb.tb_frame.f_code.co_filename #Get the file name in which error has occured
      
 
-    def __str__(self): #This method is the string representation of teh object
+    def __str__(self): #This method is the string representation of the object
         return "Error occured in the python script name [{0}] line number [{1}] error message [{2}]".format(
             self.file_name, self.line_no, str(self.error_message))
     
