@@ -7,5 +7,9 @@ DateTime
 dataclasses
 pathlib
 Flask
+dvc
+mlflow==2.2.2 #more Stable version of mlflow
+pickle5
+urllib3
 
--e .
+#-e .

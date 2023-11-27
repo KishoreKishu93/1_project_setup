@@ -1,6 +1,7 @@
 from src.DimondPricePrediction.components.data_ingestion import DataIngestion
 from src.DimondPricePrediction.components.data_transformation import DataTransformation
 from src.DimondPricePrediction.components.model_trainer import ModelTrainer
+from src.DimondPricePrediction.components.model_evaluation import ModelEvaluation
 
 import os
 import sys
@@ -22,3 +23,8 @@ train_arr,test_arr=data_transformation.initiate_data_transformation(train_data_p
 model_trainer_obj = ModelTrainer()
 
 model_trainer_obj.initiate_model_training(train_arr,test_arr)
+
+
+model_evaluation_obj=ModelEvaluation()
+
+model_evaluation_obj.initiate_model_evaluation(test_arr)
